@@ -1,0 +1,21 @@
+.wallet_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 10px;
+  padding: 9px 7px;
+  width: 100%;
+  max-width: 165px;
+  background: var(--secondary-dark-color);
+  transition: 0.5;
+  cursor: pointer;
+
+  &:hover {
+    background: var(--secondary-dark-color-hover);
+  }
+}
+
+.wallet_text {
+  margin-left: 8px;
+  font-size: 12px;
+}

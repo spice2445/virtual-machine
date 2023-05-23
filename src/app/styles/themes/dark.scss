@@ -1,0 +1,35 @@
+:root {
+  --primary-color: #161616;
+  --primary-light-color: rgb(22 22 22 / 50%);
+  --secondary-color: #fcfcfc;
+  --secondary-light-color: #d9d9d9;
+  --secondary-dark-color: #e7eef6;
+  --secondary-dark-color-hover: #bbcadb;
+  --triary-color: #737373;
+  --triary-dark-color: #222;
+  --info-color: #09abde;
+  --info-bg-color: #00aeef;
+  --warning-color: #f7931a;
+  --error-color: #cb0000;
+  --success-color: #2fe237;
+  --additional-color: #e7eef6;
+
+  // chips
+  --chips-active: rgb(112 211 4 / 30%);
+  --chips-activate: linear-gradient(90deg, rgb(254 128 219 / 30%) 0%, rgb(156 30 255 / 24%) 51.04%, rgb(95 116 253 / 30%) 100%);
+  --chips-moderation: rgb(251 255 69 / 30%);
+  --chips-canceled: rgb(211 4 4 / 30%);
+  --chips-active-before: #70d304;
+  --chips-activate-before: linear-gradient(90deg, #9643ff 0%, #fd5fd1 100%);
+  --chips-moderation-before: #ffc700;
+  --chips-canceled-before: #d30404;
+
+  // gradient
+  --header-gradient: linear-gradient(122.56deg, rgb(248 248 248 / 10%) 14.81%, rgb(255 255 255 / 40%) 77.71%);
+  --gray-gradient: linear-gradient(0deg, #dfe0e1, #dfe0e1), #161616;
+  --two-color-gradient: linear-gradient(90deg, #9643ff 0%, #fd5fd1 100%);
+  --tabs-color-gradient: linear-gradient(90deg, #427aff 0%, #7f00ff 100%);
+  --button-color-gradient: linear-gradient(90deg, #4d42ce 0%, #a021b5 100%);
+  --four-color-gradient: linear-gradient(90deg, #fe80db 0%, rgb(156 30 255 / 80%) 34.37%, #0fd9cd 70.31%, #5f74fd 100%);
+  --three-color-gradient: linear-gradient(90deg, #fe80db 0%, rgb(156 30 255 / 80%) 56.25%, #5f74fd 100%);
+}

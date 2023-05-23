@@ -1,0 +1,127 @@
+@import "reset";
+@import "variables/global";
+@import "themes/normal";
+@import "themes/dark";
+@import "fonts";
+
+
+body {
+  font: var(--font-m);
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--font-weight-medium);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app.storybook {
+  min-height: calc(90vh - var(--navbar-height));
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--primary-color) !important;
+}
+.swiper-wrapper {
+  margin-bottom: 50px;
+}
+.swiper-pagination-bullets {
+  // bottom: -30px !important;
+}
+.swiper-slide {
+
+  &.feature { 
+    padding: 0 10px;
+    display: flex;
+    min-height: 600px;
+    flex-direction: column;  
+  }
+  &:not(.normalize) {
+    padding: 0 15px;
+  }
+}
+.frensel-container {
+  display: flex;
+  flex-direction: column;
+}
+textarea:focus, input:focus{
+  outline: none;
+}
+.input-div {
+  &:focus-within {
+    position: relative;
+    background: #fff;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -1px;
+        bottom: -1px;
+        left: -1px;
+        right: -1px;
+        background: linear-gradient(90deg, #427AFF 3.67%, #7F00FF 100%);
+        border-radius: 9999px;
+        z-index: -1;
+      }
+  }
+}
+.gradient-5-outline {
+  position: relative;
+  background: #fff;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    left: -1px;
+    right: -1px;
+    background: linear-gradient(90deg, #427AFF 3.67%, #7F00FF 100%);
+    border-radius: 9999px;
+    z-index: -1;
+  }
+
+}
+.circle-with-text {
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  text-align: center;
+  margin: 5px 0px;
+  font-size: 21px;
+  padding: 21px;
+  display: flex;
+  height: 42px;
+  width: 42px;
+  color: #fff;
+  font-weight: 700;
+  &:not(.second) {
+    background: linear-gradient(90deg, #FE80DB 0%, rgba(156, 30, 255, 0.8) 56.25%, #5F74FD 100%);
+
+  }
+  &.second {
+    background: linear-gradient(90deg, #427AFF 3.67%, #7F00FF 100%);
+  }
+}
+.lines {
+
+  border-radius: 14px;
+  min-height: 30px;
+  width: 6px;
+  margin-left: 19px;
+  background: linear-gradient(90deg, #FE80DB 0%, rgba(156, 30, 255, 0.8) 56.25%, #5F74FD 100%);
+
+  &.second {
+    background: linear-gradient(90deg, #427AFF 3.67%, #7F00FF 100%);
+  }
+}
+.gradient-bg {
+  background: linear-gradient(90deg, #FE80DB 0%, rgba(156, 30, 255, 0.8) 56.25%, #5F74FD 100%);
+}

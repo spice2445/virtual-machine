@@ -1,0 +1,15 @@
+.connect_dialog {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 420px) {
+  .connect_dialog {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .connect_dialog_item {
+    max-width: 100% !important;
+  }
+}
